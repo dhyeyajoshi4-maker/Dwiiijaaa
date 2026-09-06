@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f9dfe3">
+  <title>A little message for Dwija 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="musicBtn" class="music" aria-label="Toggle music" title="Toggle music">♫</button>
+
+  <main>
+    <section class="page active" id="page1">
+      <div class="sparkles">✦ &nbsp; A LITTLE MESSAGE FOR YOU &nbsp; ✦</div>
+      <h1>dwija</h1>
+      <p class="subtitle">There are a few things I wanted to say properly.<br>This is my little attempt. 💗</p>
+      <button class="mainBtn" data-next="page2">READ MY HEART 🌹</button>
+      <p class="counterLabel">SECONDS SINCE I STARTED MISSING YOU</p>
+      <div id="counter" class="counter">0</div>
+      <div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="page" id="page2">
+      <div class="card">
+        <div class="sparkles">✦ THINGS I SHOULD HAVE SAID ✦</div>
+        <h2>For you, Dwija</h2>
+        <p class="big">I'm sorry for the moments when I made things harder than they needed to be.</p>
+        <p>What matters to me is that you're okay, and that you know how much I value you.</p>
+      </div>
+      <div class="card">
+        <p class="big">If I could replay some moments, I'd handle them better.</p>
+        <p>Not because everything has to be perfect — just because you deserve care and honesty.</p>
+      </div>
+      <div class="card">
+        <p class="big">And one thing I'm very sure about:</p>
+        <p>I don't want a silly misunderstanding to become the end of something important.</p>
+      </div>
+      <button class="mainBtn" data-next="page3">ONE MORE THING 🌹</button>
+      <div class="dots"><i></i><i class="on"></i><i></i><i></i></div>
+    </section>
+
+    <section class="page" id="page3">
+      <div class="meterCard">
+        <div class="sparkles">✦ COMPLETELY SCIENTIFIC ✦</div>
+        <h2>The Forgiveness Meter™</h2>
+        <p>Calculating how much forgiveness is available right now...</p>
+        <div id="meterNumber">???%</div>
+        <div class="bar"><span id="barFill"></span></div>
+        <div id="meterStatus">⚡ SCANNING FOR TOO MUCH CUTENESS...</div>
+        <div class="heart">💗</div>
+        <h3>Cuteness Meter: BROKEN</h3>
+        <p>You are officially <strong>120%</strong> more adorable than this website can calculate.</p>
+        <button class="mainBtn" id="calculateBtn">CALCULATE AGAIN ✨</button>
+      </div>
+      <button class="mainBtn secondary" data-next="page4">KEEP GOING 🌹</button>
+      <div class="dots"><i></i><i></i><i class="on"></i><i></i></div>
+    </section>
+
+    <section class="page" id="page4">
+      <div class="final">
+        <div class="sparkles">✦ ONE LAST THING FROM ME ✦</div>
+        <h2>Hey Dwija,</h2>
+        <p class="big">I'm really glad you're in my life.</p>
+        <p>Whatever the mood, whatever the day, I hope this little page makes you smile.</p>
+
+        <div class="galleryHeading">
+          <span>✦</span>
+          <h3>Little Moments of You</h3>
+          <span>✦</span>
+        </div>
+        <p class="galleryIntro">Some pictures I could never get tired of seeing. 💗</p>
+
+        <!-- PHOTO GALLERY
+             Add/replace images inside the assets folder using these filenames. -->
+        <div class="memoryGrid">
+          <button class="memoryCard tall" data-lightbox="assets/your-photo.jpg" aria-label="Open memory photo">
+            <img src="assets/your-photo.jpg" alt="Dwija" loading="lazy"
+                 onerror="this.closest('.memoryCard').classList.add('missing')">
+            <span class="memoryCaption">My favourite smile ❤️</span>
+          </button>
+
+          <button class="memoryCard" data-lightbox="assets/dwija-2.jpg" aria-label="Open memory photo">
+            <img src="assets/dwija-2.jpg" alt="Dwija" loading="lazy"
+                 onerror="this.closest('.memoryCard').classList.add('missing')">
+            <span class="memoryCaption">A little moment ✨</span>
+          </button>
+
+          <button class="memoryCard" data-lightbox="assets/dwija-3.jpg" aria-label="Open memory photo">
+            <img src="assets/dwija-3.jpg" alt="Dwija" loading="lazy"
+                 onerror="this.closest('.memoryCard').classList.add('missing')">
+            <span class="memoryCaption">You being you 💕</span>
+          </button>
+
+          <button class="memoryCard wide" data-lightbox="assets/dwija-4.jpg" aria-label="Open memory photo">
+            <img src="assets/dwija-4.jpg" alt="Dwija" loading="lazy"
+                 onerror="this.closest('.memoryCard').classList.add('missing')">
+            <span class="memoryCaption">One for the memories 🌷</span>
+          </button>
+        </div>
+
+        <div class="galleryHeading videoHeading">
+          <span>✦</span>
+          <h3>Little Memories in Motion</h3>
+          <span>✦</span>
+        </div>
+        <p class="galleryIntro">Because some moments deserve to be replayed. 🎬</p>
+
+        <!-- VIDEO GALLERY
+             Put your MP4 files in assets using these filenames. -->
+        <div class="videoGrid">
+          <div class="videoCard">
+            <video controls playsinline preload="metadata" poster="assets/your-photo.jpg">
+              <source src="assets/memory-1.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+            <p>One of those moments I'd replay forever. 🎞️</p>
+          </div>
+
+          <div class="videoCard">
+            <video controls playsinline preload="metadata" poster="assets/dwija-2.jpg">
+              <source src="assets/memory-2.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+            <p>A memory that makes me smile. 💗</p>
+          </div>
+        </div>
+
+        <div class="loveNote">
+          <div class="heart smallHeart">♡</div>
+          <p class="big">And if I had to choose a favourite memory...</p>
+          <p>I'd probably choose every moment that has you in it.</p>
+        </div>
+
+        <p class="big finalLine">Now your turn... 😊</p>
+        <button class="mainBtn" id="restart">READ IT AGAIN 💗</button>
+      </div>
+      <div class="dots"><i></i><i></i><i></i><i class="on"></i></div>
+    </section>
+  </main>
+
+  <!-- Full-screen image viewer -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightboxClose" id="lightboxClose" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="Memory">
+  </div>
+
+  <audio id="music" loop preload="none">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
