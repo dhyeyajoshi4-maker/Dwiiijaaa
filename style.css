@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@400;500;600&display=swap');
+
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Montserrat,sans-serif;color:#64263b}
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 15% 15%,#ffdce8 0,transparent 28%),
+    radial-gradient(circle at 90% 85%,#ffd9e1 0,transparent 32%),
+    linear-gradient(135deg,#fff8f6,#f9dfe3);
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:26px 26px}
+main{max-width:720px;margin:auto;padding:34px 18px 70px}
+.page{display:none;min-height:calc(100vh - 70px);align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:22px;animation:fade .55s ease}
+.page.active{display:flex}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.music{position:fixed;right:18px;top:18px;width:54px;height:54px;border:1px solid #e8b9c5;border-radius:50%;background:#fff8f5cc;color:#7d3048;font-size:26px;z-index:10;cursor:pointer}
+.sparkles{font-size:14px;letter-spacing:4px;color:#b04d69;font-weight:600}
+h1,h2,h3,.big{font-family:"Cormorant Garamond",serif;font-style:italic}
+h1{font-size:92px;line-height:.8;margin:8px 0;color:#71253e}
+h2{font-size:43px;margin:8px 0}
+h3{font-size:30px;margin:8px 0}
+.subtitle,.card p,.meterCard p,.final p{font-family:"Cormorant Garamond",serif;font-size:23px;line-height:1.35;color:#765b64}
+.big{font-size:30px;color:#6f2b42}
+.mainBtn{border:0;border-radius:55px;padding:18px 42px;background:linear-gradient(90deg,#d85a79,#8f274b);color:#fff;font-size:17px;letter-spacing:1.5px;font-weight:600;box-shadow:0 12px 30px #b84d6b33;cursor:pointer;transition:.2s}
+.mainBtn:hover{transform:translateY(-2px);box-shadow:0 15px 34px #b84d6b44}
+.counterLabel{font-size:12px;letter-spacing:3px;color:#9c7780;margin:12px 0 0}
+.counter{font-family:"Cormorant Garamond",serif;font-size:58px;color:#bd4966}
+.dots{display:flex;gap:12px;margin-top:12px}.dots i{display:block;width:12px;height:12px;border-radius:50%;background:#e8a9b9}.dots .on{width:48px;border-radius:10px;background:#a83452}
+.card,.meterCard,.final{width:100%;padding:34px 28px;border-radius:30px;background:#fffaf7d9;border:1px solid #efcbd2;box-shadow:0 18px 45px #a94d5b14}
+.card{margin-bottom:0}.card p{margin:10px 0 0}
+.meterCard{padding:38px 24px}.meterCard h2{margin:8px 0 0}
+#meterNumber{font-family:"Cormorant Garamond",serif;font-size:92px;font-style:italic;margin:20px 0;color:#74253f}
+.bar{height:15px;border-radius:20px;background:#f1c6cf;overflow:hidden;margin:8px 10px 22px}.bar span{display:block;width:0;height:100%;background:linear-gradient(90deg,#df7d91,#8e2949);transition:1.5s}
+#meterStatus{font-size:15px;color:#8c5d69}
+.heart{font-size:55px;margin:18px 0 2px}
+.secondary{margin-top:2px}
+.final{padding:38px 28px}.photoBox{width:100%;min-height:180px;border:2px dashed #e1aab9;border-radius:22px;display:grid;place-items:center;overflow:hidden;margin:18px 0;color:#9b6a77;font-size:14px}
+.photoBox img{width:100%;max-height:360px;object-fit:cover}.photoBox span{padding:30px}
+@media(max-width:500px){main{padding:22px 12px 55px}.page{min-height:calc(100vh - 40px)}h1{font-size:76px}.sparkles{font-size:11px;letter-spacing:3px}.subtitle{font-size:20px}.card,.meterCard,.final{padding:28px 19px}.big{font-size:27px}h2{font-size:38px}}
